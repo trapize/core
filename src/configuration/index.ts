@@ -1,0 +1,1 @@
+export { IAppConfig } from './IApp.Config';
