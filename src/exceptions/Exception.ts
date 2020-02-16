@@ -133,6 +133,17 @@ export abstract class Exception implements IObjectable {
      *
      *
      * @readonly
+     * @type {number}
+     * @memberof Exception
+     */
+    public get Code(): number {
+        return this._code;
+    }
+
+    /**
+     *
+     *
+     * @readonly
      * @type {{[key: string]: any}}
      * @memberof Exception
      */
