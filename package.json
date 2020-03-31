@@ -20,19 +20,19 @@
   "author": "ztrank",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-typescript": "^7.8.3",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^24.9.0",
-    "@types/node": "^13.1.8",
-    "@types/uuid": "^3.4.6",
+    "@types/node": "^13.9.8",
+    "@types/uuid": "^3.4.8",
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "jest": "^24.9.0",
-    "ts-jest": "^24.3.0",
+    "ts-jest": "^25.3.0",
     "tslint": "^5.20.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "inversify": "^5.0.1",
