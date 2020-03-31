@@ -11,7 +11,7 @@ The simplest app would be a configuration module that includes an `IAssembly` fo
 ## Advanced
 Checkout the wiki for advanced usage.
 
-https://github.com/trapize/core.wiki.git
+https://github.com/trapize/core/wiki
 
 ## MIT
 
