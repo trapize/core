@@ -14,7 +14,7 @@ import { DependencyInjection } from './Dependency.Injection';
  * @param {Container} [container=new Container()]
  * @returns {Promise<void>}
  */
-export async function Main(root: string, config: IAppConfig, container: Container = new Container()): Promise<void> {
+export async function Main<T = any>(root: string, config: IAppConfig, container: Container = new Container()): Promise<T> {
     if(!container.isBound(Symbols.Configuration.IAppConfig)) {
         container.bind(Symbols.Configuration.IAppConfig).toConstantValue(config);
     }
@@ -29,6 +29,6 @@ export async function Main(root: string, config: IAppConfig, container: Containe
     }
     
     container = await container.get<IDependencyInjection>(Symbols.Runtime.IDependencyInjection)(container, config, root);
-    const application = container.get<IApplication>(Symbols.IApplication);
+    const application = container.get<IApplication<T>>(Symbols.IApplication);
     return application.Run(container);
 }

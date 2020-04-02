@@ -6,7 +6,7 @@ import { Container } from 'inversify';
  * @export
  * @interface IApplication
  */
-export interface IApplication {
+export interface IApplication<T = any> {
     /**
      *
      *
@@ -14,5 +14,5 @@ export interface IApplication {
      * @returns {Promise<void>}
      * @memberof IApplication
      */
-    Run(container: Container): Promise<void>;
+    Run(container: Container): Promise<T>;
 }
